@@ -4,8 +4,7 @@ body {background-color: #000; overflow: hidden;}
 
 @font-face {
 	font-family: impact;
-	src: url('./impactreg.eot');
-	src: local('impactreg'), url('./impactreg.woff') format('woff'), url('./impactreg.ttf') format('truetype');
+	src: url('./impactreg.eot?') format('eot'), url('./impactreg.woff') format('woff'), url('./impactreg.ttf') format('truetype');
 }
 
 .logo {
