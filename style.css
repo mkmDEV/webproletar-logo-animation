@@ -23,6 +23,8 @@ body {background-color: #000; overflow: hidden;}
   position: absolute;
   z-index: -1;
   left: 0;
+	text-align: center;
+	width: 100%;
 }
 
 .logo::before {
@@ -34,21 +36,20 @@ body {background-color: #000; overflow: hidden;}
 .logo::after {
   color: black;
   animation: rotate-shadow 5s infinite ;
-   /*animation-delay: 2.5s;*/
   animation-timing-function: linear;
 }
 
 @keyframes rotate {
-  0%   {left:0%; top:0%;}
-  25%  {left:5%; top:0%;}
-  50%  {left:5%; top:5%;}
-  75%  {left:0%; top:5%;}
-  100% {left:0%; top:0%;}
+  0%   {left:-2.5%; top:-2.5%;}
+  25%  {left:2.5%; top:-2.5%;}
+  50%  {left:2.5%; top:2.5%;}
+  75%  {left:-2.5%; top:2.5%;}
+  100% {left:-2.5%; top:-2.5%;}
 }
 @keyframes rotate-shadow {
-  0%   {left:5%; top:5%;}
-  25%  {left:0%; top:5%;}
-  50%  {left:0%; top:0%;}
-  75%  {left:5%; top:0%;}
-  100% {left:5%; top:5%;}
+  0%   {left:2.5%; top:2.5%;}
+  25%  {left:-2.5%; top:2.5%;}
+  50%  {left:-2.5%; top:-2.5%;}
+  75%  {left:2.5%; top:-2.5%;}
+  100% {left:2.5%; top:2.5%;}
 }
