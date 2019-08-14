@@ -24,31 +24,23 @@ body {background-color: #000; overflow: hidden;}
   left: 0;
 	text-align: center;
 	width: 100%;
+	animation: rotate 5s infinite;
+	animation-timing-function: linear;
 }
 
 .logo::before {
   color: red;
-  animation: rotate 5s infinite;
-  animation-timing-function: linear;
 }
 
 .logo::after {
   color: black;
-  animation: rotate-shadow 5s infinite ;
-  animation-timing-function: linear;
+	animation-delay: -2.5s;
 }
 
 @keyframes rotate {
-  0%   {left:-2.5%; top:-2.5%;}
-  25%  {left:2.5%; top:-2.5%;}
-  50%  {left:2.5%; top:2.5%;}
-  75%  {left:-2.5%; top:2.5%;}
-  100% {left:-2.5%; top:-2.5%;}
-}
-@keyframes rotate-shadow {
-  0%   {left:2.5%; top:2.5%;}
-  25%  {left:-2.5%; top:2.5%;}
-  50%  {left:-2.5%; top:-2.5%;}
-  75%  {left:2.5%; top:-2.5%;}
-  100% {left:2.5%; top:2.5%;}
+  0%   {left: -2.5%; top: -2.5%;}
+  25%  {left: 2.5%; top: -2.5%;}
+  50%  {left: 2.5%; top: 2.5%;}
+  75%  {left: -2.5%; top: 2.5%;}
+  100% {left: -2.5%; top: -2.5%;}
 }
